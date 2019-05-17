@@ -5,7 +5,7 @@ $('#inch').on("submit",function(e){
         .then(function(response){
             var conversion = response.data.centimetersInInch;
             var ans = conversion * inches;
-            $('#inchAns').html(ans);
+            $('#inchAns').html(ans+" centimeters");
         })
 })
 $('#centimeter').on("submit",function(e){
@@ -15,6 +15,6 @@ $('#centimeter').on("submit",function(e){
         .then(function(response){
             var conversion = response.data.inchesInCm;
             var ans = conversion * centimeter;
-            $('#centiAns').html(ans);
+            $('#centiAns').html(ans+" inches");
         })
 })
